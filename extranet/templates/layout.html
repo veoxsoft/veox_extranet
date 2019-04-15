@@ -56,6 +56,83 @@
                 width: 40px;
             }
         }
+
+        .veox-footer {
+            padding: 50px 0 50px 0;
+            background-color: #EEEEEE;
+        }
+
+        .veox-footer .veox-footer-item {
+            padding: 30px 0 30px 0;
+        }
+
+        .veox-footer .veox-footer-item h1,
+        h2 {
+            margin: 0;
+        }
+
+        .veox-footer .veox-footer-item h2 {
+            font-size: 1.2em;
+            color: #616161;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .veox-footer .veox-footer-item ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .veox-footer .veox-footer-item ul>li {
+            display: block;
+            padding: 5px 0 5px 0;
+        }
+
+        .veox-footer .veox-footer-item ul>li>a {
+            font-size: 1em;
+            text-decoration: none !important;
+            color: #616161;
+            transition: 0.3s all ease-in-out;
+        }
+
+
+        .veox-footer .veox-footer-item ul>li>a:hover {
+            color: #263238;
+        }
+
+        .veox-contact span {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+
+        .veox-footer .veox-footer-item i {
+            margin-right: 5px;
+        }
+
+        .veox-footer .veox-contact span {
+            color: #616161;
+        }
+
+        .veox-footer-info>img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .veox-footer-info>h1 {
+            font-size: 1.5em;
+            color: #009688 !important;
+            font-weight: lighter;
+            text-transform: uppercase;
+            margin-bottom: 10px !important;
+        }
+
+        .veox-footer-info>p {
+            color: #616161;
+            font-size: 1em;
+        }
     </style>
 </head>
 
@@ -86,6 +163,54 @@
     </nav>
     <div class="fixed-margin"></div>
     {% block content %}{% endblock %}
+    <footer class="veox-footer">
+        <div class="container">
+            <div class="col-xs-24 col-sm-6 col-md-6 col-lg-6">
+                <div class="veox-footer-item veox-footer-info">
+                    <img alt="logo" src="{% static 'images/logo.png' %}">
+                    <h1>VEOX</h1>
+                    <p>VEOX es una empresa de tecnología que combina el desarrollo de software y hardware con base
+                        científica para brindar soluciones disruptivas para problemas de la región.</p>
+                </div>
+            </div>
+            <div class="col-xs-24 col-sm-6 col-md-6 col-lg-6">
+                <div class="veox-footer-item">
+                    <h2>Enlaces de interés</h2>
+                    <ul>
+                        <li><a href="" target="_blank"><i class="fa fa-arrow-right"></i>Inicio</a></li>
+                        <li><a href="" target="_blank"><i class="fa fa-arrow-right"></i>Enlace de interés</a></li>
+                        <li><a href="" target="_blank"><i class="fa fa-arrow-right"></i>Enlace de interés</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-24 col-sm-6 col-md-6 col-lg-6">
+                <div class="veox-footer-item">
+                    <h2>Proyectos</h2>
+                    <ul>
+                        <li><a href="" target="_blank"><i class="fa fa-arrow-right"></i>Proyecto Atlantis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-24 col-sm-6 col-md-6 col-lg-6">
+                <div class="veox-footer-item veox-contact">
+                    <h2>Contacto</h2>
+                    <div class="form-group">
+                        <span><i class="fa fa-map-marker"></i><b>Dirección</b>:</span>
+                        <span>Urbanización Luz y Alegría Mz. B2 Slt. 3 Paucarpata</span>
+                        <span><small>Arequipa - Perú</small></span>
+                    </div>
+                    <div class="form-group">
+                        <span><i class="fa fa-phone"></i><b>Teléfono</b>:</span>
+                        <span>054-417397</span>
+                    </div>
+                    <div class="form-group">
+                        <span><i class="fa fa-envelope"></i><b>Correo electrónico</b>:</span>
+                        <span>veox.soft.dev@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
