@@ -4,8 +4,10 @@
 
 {% block title %}Inicio{% endblock %}
 
+{% block menu_transparent %}veox-menu-transparent{% endblock %}
+
 {% block content %}
-<section>
+<section class="veox-banner">
     <div id="carrusel" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carrusel" data-slide-to="0" class="active"></li>
@@ -14,8 +16,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://www.cinema5d.com/wp-content/uploads/2019/01/Navatics-MITO-underwater-drone.jpg"
-                    class="d-block w-100">
+                <img src="{% static 'images/banner.png' %}" class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -164,4 +165,20 @@
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+    $(document).ready(function () {
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 100) {
+                $('.veox-menu').removeClass('veox-menu-transparent');
+            } else {
+                $('.veox-menu').addClass('veox-menu-transparent');
+            }
+        });
+    });
+</script>
+
 {% endblock %}

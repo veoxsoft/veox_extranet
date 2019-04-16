@@ -1,0 +1,173 @@
+body {
+  background-color: #FFFFFF;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.veox-button {
+  padding: 10px 15px;
+  border: none;
+  color: #F5F5F5;
+  border-radius: 0;
+  background-color: #009688;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.veox-button:hover {
+  color: #009688;
+  background-color: #F5F5F5;
+}
+
+.veox-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.veox-menu {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.veox-menu .nav-link {
+  color: #009688 !important;
+}
+
+.veox-menu .navbar-brand {
+  padding: 0;
+}
+
+.veox-menu .navbar-brand img {
+  width: 80px;
+  padding: 10px;
+}
+
+.veox-menu-transparent {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.veox-menu-transparent .nav-link {
+  color: #ffffff !important;
+}
+
+.veox-menu-margin {
+  display: block;
+  margin-bottom: 95px;
+}
+
+.veox-banner {
+  margin-top: -95px;
+}
+
+.veox-banner .carousel-item {
+  max-height: 600px;
+}
+
+.veox-banner .carousel-item img {
+  margin-top: -10%;
+}
+
+.veox-banner .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+}
+
+.veox-banner .carousel-caption h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.veox-banner .carousel-caption p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.veox-footer {
+  padding: 60px 0 60px 0;
+  background-color: #EEEEEE;
+}
+
+.veox-footer-item {
+  padding: 20px 0;
+}
+
+.veox-footer-item h1, .veox-footer-item h2 {
+  text-transform: uppercase;
+}
+
+.veox-footer-item h1 {
+  font-weight: lighter;
+  font-size: 18px;
+  color: #009688;
+}
+
+.veox-footer-item h2 {
+  font-weight: bolder;
+  font-size: 16px;
+  color: #616161;
+}
+
+.veox-footer-item img {
+  padding: 10px 0 10px 0;
+  width: 80px;
+}
+
+.veox-footer-item p {
+  color: #757575;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.veox-footer-item .nav-link {
+  padding-left: 0;
+  color: #757575;
+  font-size: 14px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.veox-footer-item .nav-link:hover {
+  color: #616161;
+}
+
+.veox-information {
+  padding: 30px 0;
+  background-color: #424242;
+}
+
+.veox-information .veox-social li {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.veox-information .veox-social li a {
+  display: block;
+  border-radius: 50%;
+  background-color: #EEEEEE;
+  color: #424242;
+}
+
+.veox-information .veox-copyright span {
+  display: block;
+  font-size: 10px;
+  color: #EEEEEE;
+}
+/*# sourceMappingURL=styles.css.map */
