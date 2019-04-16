@@ -1,0 +1,91 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %}Noticias{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'noticias' %}">Novedades</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Noticias</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                <h1>Novedades</h1>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Actualidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galería de imágenes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galería de videos</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-9 col-md-9 col-lg-9">
+                <h1>Noticias</h1>
+                <div>
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="http://veberod.nu/wp-content/gallery/romele-gk/anders-tid-n-4171-800x500-.jpg.jpg"
+                                    class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="">Peruanos que ganaron concurso de la NASA:
+                                            “Necesitamos financiamiento para nuestro vehículo lunar”</a></h5>
+                                    <p class="card-text">Estudiantes de la UNI que ganaron el premio de Telemetría y
+                                        Electrónica del concurso Human Exploration Rover Challange buscan recaudar
+                                        dinero para terminar su prototipo y competir el próximo año.</p>
+                                    <p class="card-text"><small class="text-muted">15-04-2019 10:11 pm</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="http://veberod.nu/wp-content/gallery/romele-gk/anders-tid-n-4171-800x500-.jpg.jpg"
+                                    class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="">Microsoft confirmó ataque cibernético en
+                                            correos
+                                            de Outlook durante tres meses</a></h5>
+                                    <p class="card-text">Entre los datos expuestos se encuentran direcciones de
+                                        correo,
+                                        los nombres de archivos adjuntos, los asuntos de los correos electrónicos y
+                                        los
+                                        nombres y direcciones de usuarios frecuentes.</p>
+                                    <p class="card-text"><small class="text-muted">15-04-2019 10:11 pm</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
