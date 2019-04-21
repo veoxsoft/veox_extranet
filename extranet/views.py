@@ -11,6 +11,12 @@ def nosotros(request):
 def mision_vision(request):
     return render(request, 'mision_vision.html')
 
+def valores(request):
+    return render(request, 'valores.html')
+
+def equipo(request):
+    return render(request, 'equipo.html')
+
 def noticias(request):
     return render(request, 'noticias.html')
 
